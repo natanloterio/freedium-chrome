@@ -1,0 +1,13 @@
+name: Zip repository and put on S3
+on: [workflow_dispatch]
+
+jobs:
+  zip-n-push:
+    name: Zip and Push
+    runs-on: ubuntu-latest
+    steps:
+      - name: Zip Folder
+        run: |
+          cd ../ # I added this
+          rm -rf freedum-chrome.zip
+          zip -r freedum-chrome.zip freedum-chrome -x ".git/*" ".github/*"
