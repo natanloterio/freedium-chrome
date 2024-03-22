@@ -12,5 +12,5 @@ jobs:
       - name: Zip Folder
         run: |
           cd ../ # I added this
-          rm -rf freedum-chrome.zip
-          zip -r freedum-chrome.zip freedum-chrome -x ".git/*" ".github/*"
+          rm -rf freedium-chrome.zip
+          zip -r freedium-chrome.zip freedium-chrome -x ".git/*" ".github/*"
