@@ -2,7 +2,7 @@ name: Zip repository and publish
 on:
     push:
       branches:
-        - master
+        - main
 
 jobs:
   zip-n-push:
