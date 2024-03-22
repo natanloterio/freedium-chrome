@@ -1,0 +1,21 @@
+{
+    "manifest_version": 3,
+    "name": "Freedium Chrome",
+    "description": "Read Medium articles",
+    "version": "1.0",
+    "action": {
+        "default_title": "Click to by pass",
+        "default_icon": {              
+            "16": "images/ic_16.png",   
+            "24": "images/ic_24.png",   
+            "32": "images/ic_32.png",
+            "48": "images/ic_48.png",
+            "64": "images/ic_64.png",
+            "128": "images/ic_128.png"
+        }
+    },
+      "permissions": ["activeTab", "scripting"],
+      "background": {
+        "service_worker": "background.js"
+      }
+  }
