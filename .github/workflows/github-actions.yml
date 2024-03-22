@@ -1,5 +1,8 @@
-name: Zip repository and put on S3
-on: [workflow_dispatch]
+name: Zip repository and publish
+on:
+    push:
+      branches:
+        - master
 
 jobs:
   zip-n-push:
